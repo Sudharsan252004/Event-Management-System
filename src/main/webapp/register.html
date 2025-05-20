@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url("images/register.webp");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .home p {
+      position: absolute;
+      font-size: 32px;
+      font-weight: bold;
+      top: 5%;
+      left: 35%;
+      width: 25vw;
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      z-index: 5;
+    }
+
+    .form-box {
+       background: rgba(0, 0, 0, 0.6);
+      padding: 30px 40px;
+      border-radius: 15px;
+      width: 400px;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    form label {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .input-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .input-1 label {
+      width: 120px;
+    }
+
+    .input-1 input,
+    .input-1 select {
+      height: 30px;
+      width: 220px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .submit input {
+      background-color: orangered;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      width: 120px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit input:hover {
+      background-color: darkorange;
+    }
+
+    @media screen and (max-width: 768px) {
+      .form-box {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .home p {
+        width: 100vw;
+        left: 0;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="home">
+    <p>Dreams Event Planner<br /><br />Register</p>
+  </div>
+
+  <div class="form-box">
+    <form action="RegisterServelet" method="post">
+      <div class="name input-1">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" name="namee"/>
+      </div>
+      <div class="email input-1">
+        <label>Email</label>
+        <input type="email"placeholder="Enter Your Email", name="email" />
+      </div>
+      <div class="pass input-1">
+        <label>Password</label>
+        <input type="password"placeholder="Minimum 6 Character" name="password" />
+      </div>
+      <div class="number input-1">
+        <label>Number</label>
+        <input type="tel" placeholder="10-digit Number" name="mobilenumber" />
+      </div>
+      <div class="event input-1">
+        <label>Events</label>
+        <select name="event">
+          <option value="Select">Select Events</option>
+          <option value="Wedding">Wedding</option>
+          <option value="FamilyEvents">Family Events</option>
+          <option value="Concert">Concert</option>
+          <option value="CorporateEvents">Corporate Events</option>
+          <option value="ProductLaunches">Product Launches</option>
+          <option value="SchoolEvents">School & College Events</option>
+        </select>
+      </div>
+      <div class="district input-1">
+        <label>District</label>
+        <select name="district">
+          <option value="Select">Select District</option>
+          <option value="Chennai">Chennai</option>
+          <option value="Coimbatore">Coimbatore</option>
+          <option value="Madurai">Madurai</option>
+          <option value="Salem">Salem</option>
+          <!-- Add other districts as needed -->
+        </select>
+      </div>
+      <div class="date input-1">
+        <label>Date</label>
+        <input type="date" name="date" />
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" />
+      </div>
+
+        
+    </form>
+  </div>
+</body>
+</html>

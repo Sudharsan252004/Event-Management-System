@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:#ffffff;
+    --text-color:#22100d;
+    --second-color:#685f78;
+    --main-color:#f66962;
+    --big-font:3.8rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.carousel {
+    width: 100vw;
+    height: 100vh;
+}
+.web{
+    height: 100vh;
+    width: 100vw;
+    
+
+}
+
+.carousel-item{
+    height: 100vh;
+}
+
+.about{
+    
+    padding-top: 100px;
+    text-align: center;
+}
+.about h2:hover{
+    color: orangered;
+    cursor: pointer;
+}
+.para p{
+   
+    padding-top: 80px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    width: 50%;
+    text-wrap: wrap;
+    font-weight: bold;
+
+    
+
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+
+
+    
+   
+}
+.para{
+     display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
+      margin: 0 30px;
+}
+.para video{
+    width: 40%;
+    /* height: 100%; */
+    margin-top: 80px;
+}
+
+
+.service{
+    text-align: center;
+    padding-top: 60px;
+}
+.serv{
+    text-align: center;
+}
+
+@media screen and (max-width:769px) {
+    .carousel-item{
+        height: 500px;
+    }
+    
+    }
+
+@media screen and (max-width:429px) {
+    .para video{
+        width: 100%;
+    }
+    .para p{
+        width: 100%;
+    }
+    /* .carousel-item{
+        height: 100px;
+    } */
+    
+    
+     .web{
+        height: 350px;
+     }
+}
+
+.carousel-caption h1{
+    margin-bottom: 400px;
+    
+   
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Oleo Script", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+ .register-btn {
+      background-color: orangered;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 30px
+    }
+
+.explore-btn {
+    padding: 10px 20px;
+    background-color: orangered;
+    color:white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 7%;
+    font-weight: bold;
+}

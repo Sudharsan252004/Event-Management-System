@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProductRegister</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .register-container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      color: #fff;
+    }
+
+    .register-form input {
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border: none;
+    }
+
+    .register-form input::placeholder {
+      color: #eee;
+    }
+
+    .register-form input:focus {
+      background: rgba(255, 255, 255, 0.3);
+      box-shadow: none;
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #6c5ce7;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #5a4bcf;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+      .register-container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Video Background -->
+<video autoplay muted loop class="bg-video">
+  <source src="./images/product.mp4" type="video/mp4" />
+  Your browser does not support HTML5 video.
+</video>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- Registration Form Section -->
+<div class="container d-flex align-items-center justify-content-center vh-100">
+  <div class="register-container w-100" style="max-width: 450px;">
+    <form class="register-form" action="productServelet" method="post">
+      <h2 class="text-center mb-4">Product Launches</h2>
+
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullname" placeholder="Enter your name" name="names" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="emails" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" placeholder="10-digit number" name="phones" required pattern="[0-9]{10}" />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Minimum 6 characters"name="passwords" required minlength="6" />
+      </div>
+
+      <div class="mb-3">
+        <label for="event" class="form-label">Product Type</label>
+        <input type="text" class="form-control" id="event" placeholder="Enter Your Product Name" name="events" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="district" class="form-label">Address</label>
+        <input type="text" class="form-control" id="district" placeholder="Enter your Address" name="address" required />
+      </div>
+
+      <div class="mb-4">
+        <label for="eventdate" class="form-label">Event Date</label>
+        <input type="date" class="form-control" id="eventdate" name="dates" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Register</button>
+
+      <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+  <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+    <div class="me-5">Get connected with us on social networks:</div>
+    <div>
+      <a href="#" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-google"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-linkedin"></i></a>
+      <a href="#" class="text-white me-4"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section class="">
+    <div class="container text-center text-md-start">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+          <h6 class="text-uppercase fw-bold">Dreams Event Planner</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p>We plan unforgettable events across Tamil Nadu and beyond.</p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+          <h6 class="text-uppercase fw-bold">Services</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p><a href="#!" class="text-white">Wedding</a></p>
+          <p><a href="#!" class="text-white">Family Events</a></p>
+          <p><a href="#!" class="text-white">Concert</a></p>
+          <p><a href="#!" class="text-white">Corporate Events</a></p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p><a href="#!" class="text-white">Testimonials</a></p>
+          <p><a href="#!" class="text-white">Privacy Policy</a></p>
+          <p><a href="#!" class="text-white">Refund Policy</a></p>
+          <p><a href="#!" class="text-white">Terms & Services</a></p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+          <p><i class="fas fa-home me-2"></i> Coimbatore, India</p>
+          <p><i class="fas fa-envelope me-2"></i> dreamsevent@gmail.com</p>
+          <p><i class="fas fa-phone me-2"></i> +91 99945 75396</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2020 - 2025 Dreams Event Planner. <a class="text-white" href="#">All Rights Reserved</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

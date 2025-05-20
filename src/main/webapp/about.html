@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="about.css" />
+  <style>
+    .hero-video {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 60vh;
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- Video Hero Section -->
+<header class="position-relative overflow-hidden">
+  <video autoplay muted loop class="w-100 hero-video">
+    <source src="./images/apagevideo.mp4" type="video/mp4">
+
+    
+  </video>
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-white text-center">
+    <h1 class="display-4 fw-bold"> Dreams Event Planner</h1>
+    <p class="lead">We turn your dreams into unforgettable memories</p>
+  </div>
+</header>
+
+<!-- About Content -->
+<section class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h2 class="fw-bold">Our Story</h2>
+      <p>
+        Dreams Event Planner has been at the heart of creating timeless experiences for over a decade.
+        From grand weddings to exclusive corporate functions, our passion lies in perfecting every detail.
+      </p>
+      <p>
+        With a team of creative professionals, we specialize in transforming your vision into reality with elegance, style, and precision.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6" alt="Our Story" class="img-fluid rounded shadow">
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Meet the Team</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/anoutman1.jpg" class="card-img-top" alt="Sarah">
+          <div class="card-body">
+            <h5 class="card-title">Shara Johnson</h5>
+            <p class="card-text text-muted">Founder & Lead Planner</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/aboutman2.jpg" class="card-img-top" alt="Michael">
+          <div class="card-body">
+            <h5 class="card-title">Michael Lee</h5>
+            <p class="card-text text-muted">Creative Director</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow-sm h-100">
+          <img src="images/aboutman.jpg" class="card-img-top" alt="Emily">
+          <div class="card-body">
+            <h5 class="card-title">Aarav</h5>
+            <p class="card-text text-muted">Logistics Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div class="container-fluid mt-5 p-0" >
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #1c2331"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4"
+             style="background-color: #6351ce"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="text-white me-4">
+        <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start ">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto ">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Dreams Event Planner</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Here you can use rows and columns to organize your footer
+              content. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Services</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Wedding</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Family Events</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Concert</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Corporate Events</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Product Launches</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">School & Collge Events</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-white">Testimonials</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Privacy Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Cancellation & Refund Policy</a>
+            </p>
+            <p>
+              <a href="#!" class="text-white">Terms & Services</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Coimbatore</p>
+            <p><i class="fas fa-envelope mr-3"></i> dreamsevent@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> +91 9994575396</p>
+            <p><i class="fas fa-print mr-3"></i> +91 9876543210</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2020 - 2025 Dreams Event Planner.
+      <a class="text-white" href="https://mdbootstrap.com/"
+         >All Rights Reserved</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
